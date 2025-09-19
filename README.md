@@ -20,7 +20,6 @@
 - 🔒 **Secure Passwords**: Strong, random passwords for every account.
 - 🗂️ **Account Management**: Credentials saved to a stylish `accounts.html` with delete/restore and visual feedback.
 - 📝 **Thread-Safe Logging**: Real-time, animated log output for transparency and debugging.
-- 🔊 **Sound Effects**: Optional click sound for button presses.
 
 ---
 
@@ -36,8 +35,6 @@ Install all required packages using:
 ```bash
 pip install PyQt5 numpy selenium webdriver-manager
 ```
-
-> 💡 *For sound effects, `PyQt5.QtMultimedia` is included with PyQt5 on most systems.*
 
 ---
 
@@ -71,6 +68,18 @@ pip install PyQt5 numpy selenium webdriver-manager
 - <span style="color:#ffb300">**found_emails.txt**</span>: List of all disposable emails used.
 
 ---
+🔑 Secret Key Reset Tool
+
+Purpose: If you forget your Playit.gg account credentials, the included batch file can regenerate a “broken” secret key. This lets you safely set up a new agent without needing to access the old account.
+Functionality:
+Generates a random 4-digit secret key.
+Updates the playit.toml file in the current user's local AppData folder.
+Fully automated for the current user; no manual edits required.
+
+Usage:
+Double-click the reset_secret_key.bat file.
+The batch updates the secret_key in your Playit configuration.
+Use the new key when setting up a new agent.
 
 ## 🧩 Troubleshooting
 
